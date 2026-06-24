@@ -127,7 +127,6 @@ content-script.js    ISOLATED world: the modal (Shadow DOM) + orchestration + pr
 lib/ghl.js           GHL API client (folder / workflow / trigger / tag / auto-save / publish)
 background.js        service worker: CORS-free fetch proxy (host_permissions)
 popup.html           info screen
-docs/ghl-recon.md    full reverse-engineering notes for the private endpoints
 ```
 
 **Auth.** The `token-id` header (a short-lived Firebase JWT) is captured at runtime by
@@ -138,8 +137,6 @@ patching `fetch`/`XHR` inside the builder iframe. Workflow calls use
 `leadgen-apps-form-survey-builder.leadconnectorhq.com` iframe, whose CORS allowance toward
 the workflow service isn't guaranteed. The service worker issues requests with
 `host_permissions`, bypassing page CORS regardless of origin.
-
-Full endpoint + payload reference: [`docs/ghl-recon.md`](docs/ghl-recon.md).
 
 **Build/verify:**
 ```bash
