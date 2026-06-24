@@ -17,7 +17,7 @@ No more jumping into the workflow builder every time you create a form.
 In GoHighLevel, when you want a form to **add a tag** to every person who submits it, you normally have to:
 
 1. leave your form,
-2. go to **Automation → Workflows**,
+2. go to **Workflows**,
 3. create a folder,
 4. create a workflow,
 5. add a *"Form submitted"* trigger,
