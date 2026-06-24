@@ -1,0 +1,11 @@
+# OS / editor cruft
+.DS_Store
+Thumbs.db
+*.log
+
+# Playwright recon artifacts (may contain private IDs / tokens)
+.playwright-mcp/
+docs/recon-samples/
+
+# Node (none committed, but just in case)
+node_modules/
